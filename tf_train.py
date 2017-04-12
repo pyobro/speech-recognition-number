@@ -54,11 +54,11 @@ def process_test_data():
     return testing_data
 
 
-# train_data = create_train_data()
-train_data = np.load('train_data.npy')
+train_data = create_train_data()
+# train_data = np.load('train_data.npy')
 
-# test_data = process_test_data()
-test_data = np.load('test_data.npy')
+test_data = process_test_data()
+# test_data = np.load('test_data.npy')
 
 convnet = input_data(shape=[None, IMG_SIZE, IMG_SIZE, 1], name='input')
 
